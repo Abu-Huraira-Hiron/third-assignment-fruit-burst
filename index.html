@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit burst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -31,10 +32,7 @@
     }
 
     .navbarstyle{
-      padding-top: 18px;
-      padding-left: 50px;
-      width: 1200px;
-      height: 120px;
+      
       flex-shrink: 0;
     }
 
@@ -45,7 +43,7 @@
 
 <body >
     <header class="bg-white">
-        <nav class="navbarstyle"><div class="navbar bg-base-100 bg-red-400 rounded-full">
+        <nav class="pt-[18px] pl-[50px] w-[1200px] h-[120px]"><div class="navbar bg-base-100 bg-red-400 rounded-full">
           <div class="flex-1 justify-between">
            <div class="flex-1"> <a class="btn btn-ghost normal-case text-xl text-white">Home</a>
             <a class="btn btn-ghost normal-case text-xl text-white">About us</a>
@@ -60,7 +58,8 @@
 
           <div class="flex-none gap-2">
             <div class="form-control">
-              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto bg-white rounded-full" />
+              
+              <div><input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto bg-white rounded-full" /></div>
             </div>
             
             </div>
@@ -102,11 +101,12 @@
         </div></div>
         <div class="w-[500px] h-[100px] ml-36 -mt-11 bg-slate-50 drop-shadow-lg ">
           <div class="flex gap-9 pl-6 pt-4">
-            <div><img class="w-14 h-14" src="./images/fruit1.png"  alt=""><div><p class="text-slate-950 text-base">Strawberry</p></div></div>
-            <img class="w-14 h-14" src="./images/fruit2.png" alt="">
-            <img class="w-14 h-14" src="./images/fruit3.png" alt="">
-            <img class="w-14 h-14" src="./images/fruit4.png" alt="">
-            <img class="w-14 h-14" src="./images/fruit5.png" alt=""></div>
+            <div><img class="w-14 h-14" src="./images/fruit1.png"  alt=""><div><p class="text-slate-950 ">Strawberry</p></div></div>
+            <div><img class="w-14 h-14" src="./images/fruit2.png" alt=""><p class="text-slate-950 ">Orange</p></div>
+            <div><img class="w-14 h-14" src="./images/fruit3.png" alt=""><p class="text-slate-950 ">Mango</p></div>
+            <div><img class="w-14 h-14" src="./images/fruit4.png" alt=""><p class="text-slate-950 ">Strawberry</p></div>
+            <div><img class="w-14 h-14" src="./images/fruit5.png" alt=""><p class="text-slate-950 ">Dalim</p></div>
+          </div>
         </div>
         
 
@@ -116,7 +116,56 @@
     </header>
 
     <!-- header finish -->
-    <main>
+    <main class="pl-28">
+      <div class="w-[1000px] h-[800px] bg-white ">
+        <div class="flex-row"><div class="flex justify-between">
+          <div><h3 class="font-extrabold fon text-3xl text-slate-900 pt-10 pl-3">Deal of the day</h3>
+            <p class="text-slate-900 pl-3">Contrary to popular belief,is not simply random <br> text.It has roots in a piece of <br> classical Latin literature from 45 BC.</p></div>
+
+          <!-- cowndown -->
+          <div class="flex gap-5 text-slate-900 pt-16 pr-3">
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:51;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+          <!-- cowndow finis --></div>
+          <div class="flex gap-2 pt-10">
+            <div class="w-[250px] h-[300px] bg-white pt-16 pl-10 drop-shadow-lg"><div><img src="./images/fruit5.png" alt=""></div><p class="text-slate-900 pl-12 pt-4">Dalim</p></div>
+            <!-- 1f-->
+            <div class="w-[250px] h-[300px] bg-white pt-16 pl-16 drop-shadow-lg"><div><img src="./images/fruit6.png" alt=""></div><p class="text-slate-900 pl-9">Apple</p></div>
+            <!-- 2f -->
+            <div class="w-[250px] h-[300px] bg-white pt-16 pl-10 drop-shadow-lg"><div><img src="./images/fruit7.png" alt=""></div><p class="text-slate-900 pl-12">Orange</p></div>
+            <!-- 3f -->
+            <div class="w-[250px] h-[300px] bg-white pt-16 pl-12 drop-shadow-lg"><div class="items-center"><img src="./images/fruit8.png" alt=""></div><p class="text-slate-900 pl-12">Dragon</p></div>
+            <!-- 4f -->
+          </div>
+          <!-- card finish -->
+        
+        
+        </div>
+
+      </div>
              
     </main>
     <!-- main finish -->
